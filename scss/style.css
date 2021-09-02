@@ -184,22 +184,89 @@
   }
 }
 
-main {
-  width: 100%;
+.main {
+  width: 100vw;
   height: 90vh;
-  background-image: url(./images/56f2fa4552bcd066018b865e.jpeg);
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  padding: 0 10%;
+  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main__container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main__container .logo__container {
+  width: 40%;
+  height: 70%;
+}
+
+.main__container .logo__container img {
+  height: clamp(200px, 40vw, 400px);
+  width: clamp(200px, 40vw, 400px);
+}
+
+.main__container .text__container {
+  width: 40%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__container .text__container h1 {
+  font-size: clamp(2rem, 2.5vw, 4.5rem);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#cf4561), to(#fffbd5));
+  background: linear-gradient(to right, #cf4561, #fffbd5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .main__container .text__container h1 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main__container .text__container h1 {
+    font-weight: 600;
+  }
+}
+
+.main__container .text__container p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  text-align: center;
 }
 
 * {
