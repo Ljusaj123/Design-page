@@ -1,0 +1,47 @@
+.header {
+	width: 100vw;
+	height: 20vh;
+    padding: 2rem;
+
+	@include flex-center;
+	
+	&__container {
+		height: 100%;
+		width: 100%;
+		@include flex-space-evenly;
+
+		& h1 {
+			width: fit-content;
+			font-size: clamp(1.3rem, 2.5vw, 3rem);
+			cursor: pointer;
+            @include transparent-text-color;
+            @include bold;
+            @include after-line;
+		}
+		& nav {
+			width: clamp(280px, 30%, 400px);
+			height: 100%;
+
+			& .navigation__menu {
+				height: 100%;
+				width: 100%;
+				@include flex-space-evenly;
+				& li {
+					list-style: none;
+
+					& a {
+                        text-decoration: none;
+                        font-size: clamp(1rem, 2.5vw, 1.5rem);
+						@include transparent-text-color;
+                        @include bold;
+                        @include after-line;
+					}
+				}
+			}
+		}
+		& .menu-burger{
+			display: none;
+
+		}
+	}
+}
