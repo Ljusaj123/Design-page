@@ -1,0 +1,232 @@
+.header {
+  width: 100vw;
+  height: 20vh;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__container h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: clamp(1.3rem, 2.5vw, 3rem);
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#cf4561), to(#fffbd5));
+  background: linear-gradient(to right, #cf4561, #fffbd5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container h1 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header__container h1 {
+    font-weight: 600;
+  }
+}
+
+.header__container h1::after {
+  content: "";
+  width: 0%;
+  margin: auto;
+  display: block;
+  background: #dfdfdf;
+  height: 1px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__container h1:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__container nav {
+  width: clamp(280px, 30%, 400px);
+  height: 100%;
+}
+
+.header__container nav .navigation__menu {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__container nav .navigation__menu li {
+  list-style: none;
+}
+
+.header__container nav .navigation__menu li a {
+  text-decoration: none;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  background: -webkit-gradient(linear, left top, right top, from(#cf4561), to(#fffbd5));
+  background: linear-gradient(to right, #cf4561, #fffbd5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container nav .navigation__menu li a {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header__container nav .navigation__menu li a {
+    font-weight: 600;
+  }
+}
+
+.header__container nav .navigation__menu li a::after {
+  content: "";
+  width: 0%;
+  margin: auto;
+  display: block;
+  background: #dfdfdf;
+  height: 1px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__container nav .navigation__menu li a:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__container .menu-burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    position: relative;
+  }
+  .header__container nav {
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    top: -100%;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(235, 232, 232, 0.74);
+            box-shadow: 0px 10px 5px 0px rgba(235, 232, 232, 0.74);
+  }
+  .header__container nav.show {
+    opacity: 1;
+    z-index: 11;
+    top: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .header__container nav .navigation__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__container .menu-burger {
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 20;
+    margin-left: 10px;
+  }
+  .header__container .menu-burger .menu-list {
+    height: 3px;
+    width: 28px;
+    margin: 5px 1px;
+    background-color: #dfdfdf;
+  }
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  background-image: url(./images/56f2fa4552bcd066018b865e.jpeg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;  isto je kao ovo ispod*/
+  font: 1rem/1.5 Arial, Helvetica, sans-serif;
+  color: #dfdfdf;
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#520606), color-stop(#0b0f30), to(#330036));
+  background: linear-gradient(to top, #520606, #0b0f30, #330036);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
