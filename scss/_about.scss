@@ -23,14 +23,14 @@
 
 			& h2 {
 				font-size: clamp(1rem, 2.5vw, 2rem);
-				@include transparent-text-color;
+				@include transparent-text-color-2;
 				@include bold;
 			}
 			& p {
 				font-size: clamp(0.7rem, 1.5vw, 1rem);
 			}
 			&:hover {
-				background: rgba(88, 27, 38, 0.185);
+				background: $secondary-background-color;
 				@include transition-ease;
 			}
 		}
