@@ -1,5 +1,6 @@
-$primary-background-color: linear-gradient(to top, #520606, #0b0f30, #330036);
-$secondary-background-color: rgba(58, 15, 55, 0.863);
+$primary-background-color: linear-gradient(to top, #2a053be8, #0b0f30, #330036);
+$secondary-background-color: rgba(4, 2, 26, 0.253);
+$ternary-background-color: rgba(34, 3, 53, 0.644);
 $text-color: rgb(223, 223, 223);
 
 @mixin flex-center {
@@ -49,8 +50,16 @@ $text-color: rgb(223, 223, 223);
 	}
 }
 
-@mixin transparent-text-color {
+@mixin transparent-text-color-1 {
 	background: linear-gradient(to right, #cf4561, #fffbd5);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+@mixin transparent-text-color-2 {
+	background: linear-gradient(to right, #2b5876, #4e4376);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
