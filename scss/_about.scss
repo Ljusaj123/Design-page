@@ -1,0 +1,38 @@
+.about_us {
+	width: 90vw;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 2rem;
+	@include flex-center;
+
+	&__container {
+		width: 100%;
+		height: 100%;
+		@include flex-space-evenly;
+
+		& .smaller_box {
+			height: 80%;
+			width: 40%;
+			@include flex-space-evenly;
+			flex-direction: column;
+			border: none;
+			border-radius: 10px;
+			padding: 1rem 2rem;
+			@include transition-ease;
+			text-align: center;
+
+			& h2 {
+				font-size: clamp(1rem, 2.5vw, 2rem);
+				@include transparent-text-color;
+				@include bold;
+			}
+			& p {
+				font-size: clamp(0.7rem, 1.5vw, 1rem);
+			}
+			&:hover {
+				background: rgba(88, 27, 38, 0.185);
+				@include transition-ease;
+			}
+		}
+	}
+}
