@@ -325,7 +325,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(58, 15, 55, 0.863);
+  background: rgba(4, 2, 26, 0.253);
 }
 
 .newsletter__container {
@@ -536,8 +536,8 @@
 
 .about_us__container .smaller_box h2 {
   font-size: clamp(1rem, 2.5vw, 2rem);
-  background: -webkit-gradient(linear, left top, right top, from(#cf4561), to(#fffbd5));
-  background: linear-gradient(to right, #cf4561, #fffbd5);
+  background: -webkit-gradient(linear, left top, right top, from(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #2b5876, #4e4376);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -561,7 +561,7 @@
 }
 
 .about_us__container .smaller_box:hover {
-  background: rgba(88, 27, 38, 0.185);
+  background: rgba(4, 2, 26, 0.253);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -582,6 +582,276 @@
   }
 }
 
+.services {
+  width: 90vw;
+  height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(34, 3, 53, 0.644);
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.services__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__container .list_of_services {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+}
+
+.services__container .list_of_services h1 {
+  font-size: clamp(2rem, 2.5vw, 4.5rem);
+  background: -webkit-gradient(linear, left top, right top, from(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .services__container .list_of_services h1 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .services__container .list_of_services h1 {
+    font-weight: 600;
+  }
+}
+
+.services__container .list_of_services .service {
+  height: 30vh;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7px;
+  border: black 1px solid;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.services__container .list_of_services .service:hover {
+  -webkit-box-shadow: 0 0 20px rgba(4, 4, 58, 0.88);
+          box-shadow: 0 0 20px rgba(4, 4, 58, 0.88);
+  background: rgba(60, 60, 131, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.services__container .list_of_services .service p {
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+.services__container .list_of_services .service h2 {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  background: -webkit-gradient(linear, left top, right top, from(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .services__container .list_of_services .service h2 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .services__container .list_of_services .service h2 {
+    font-weight: 600;
+  }
+}
+
+.services__container .form_to_fill {
+  height: 70vh;
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.services__container .form_to_fill:hover {
+  -webkit-box-shadow: 0 0 20px #0e0c0c;
+          box-shadow: 0 0 20px #0e0c0c;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.services__container .form_to_fill .form__container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services__container .form_to_fill .form__container h2 {
+  font-size: clamp(1rem, 1.5vw, 1.7rem);
+}
+
+@media screen and (max-width: 768px) {
+  .services__container .form_to_fill .form__container h2 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .services__container .form_to_fill .form__container h2 {
+    font-weight: 600;
+  }
+}
+
+.services__container .form_to_fill .form__container h3 {
+  font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+}
+
+@media screen and (max-width: 768px) {
+  .services__container .form_to_fill .form__container h3 {
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .services__container .form_to_fill .form__container h3 {
+    font-weight: 600;
+  }
+}
+
+.services__container .form_to_fill .form__container input {
+  width: 80%;
+  height: 50px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.services__container .form_to_fill .form__container textarea {
+  width: 80%;
+  height: 100px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.services__container .form_to_fill .form__container button {
+  width: clamp(70px, 20vw, 130px);
+  height: 50px;
+  background: #0e0c0c;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(0.8rem, 2.5vw, 1.3rem);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    height: 150vh;
+  }
+  .services__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__container .list_of_services {
+    height: 80%;
+    width: 100%;
+  }
+  .services__container .list_of_services .service {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .services__container .form_to_fill {
+    width: 100%;
+    border: 1px solid black;
+  }
+  .services__container .form_to_fill .form__container input {
+    height: 35px;
+  }
+  .services__container .form_to_fill .form__container textarea {
+    height: 80px;
+  }
+  .services__container .form_to_fill .form__container button {
+    height: 40px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -596,7 +866,7 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#520606), color-stop(#0b0f30), to(#330036));
-  background: linear-gradient(to top, #520606, #0b0f30, #330036);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2a053be8), color-stop(#0b0f30), to(#330036));
+  background: linear-gradient(to top, #2a053be8, #0b0f30, #330036);
 }
 /*# sourceMappingURL=style.css.map */
