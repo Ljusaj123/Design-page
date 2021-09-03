@@ -12,10 +12,12 @@
         & .logo__container{
            width: 40%;
            height: 70%;
+           flex-grow: 0.7;
+           @include flex-center;
 
             & img{
-                height: clamp(250px, 40vw, 400px);
-                width: clamp(250px, 40vw, 400px);
+                height: clamp(250px, 40vw, 500px);
+                width: clamp(250px, 40vw, 500px);
             }
         }
 

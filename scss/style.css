@@ -216,11 +216,23 @@
 .main__container .logo__container {
   width: 40%;
   height: 70%;
+  -webkit-box-flex: 0.7;
+      -ms-flex-positive: 0.7;
+          flex-grow: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__container .logo__container img {
-  height: clamp(250px, 40vw, 400px);
-  width: clamp(250px, 40vw, 400px);
+  height: clamp(250px, 40vw, 500px);
+  width: clamp(250px, 40vw, 500px);
 }
 
 .main__container .text__container {
@@ -275,6 +287,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    margin-bottom: 5vh;
   }
   .main__container {
     -webkit-box-orient: vertical;
