@@ -1,0 +1,11 @@
+@include media-768{
+    .newsletter{
+        padding: 0 0.5rem;
+        .newsletter__container {
+            flex-direction: column;
+        }
+    }
+    
+    
+
+}
