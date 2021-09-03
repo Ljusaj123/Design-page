@@ -31,7 +31,7 @@
                 font-size: clamp(2rem, 2.5vw, 4.5rem);
                 @include bold;
                 text-align: center;
-                @include transparent-text-color;
+                @include transparent-text-color-1;
     
             }
             & p{
