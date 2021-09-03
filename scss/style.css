@@ -458,6 +458,28 @@
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
+@media screen and (max-width: 768px) {
+  .boxes {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 0;
+  }
+  .boxes__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxes__container .box {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

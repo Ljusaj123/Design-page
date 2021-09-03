@@ -1,0 +1,20 @@
+@include media-768{
+    .boxes {
+        height: fit-content;
+        padding: 2rem 0;
+
+        &__container {
+            flex-direction: column;
+            
+            & .box {
+                height: 30%;
+                width: 100%;
+                text-align: center;
+                padding: 0 2rem;
+                margin-bottom: 2rem;
+
+            }
+        }
+    }
+
+}
