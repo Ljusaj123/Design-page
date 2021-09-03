@@ -1,0 +1,49 @@
+.newsletter {
+    width: 100%;
+    height: 20vh;
+    padding: 0 20px;
+    margin: 0 auto;
+    @include flex-center;
+    background: $secondary-background-color;
+
+    &__container{
+        height: 100%;
+        width: 100%;
+        @include flex-space-evenly;
+
+        & h1{
+            font-size: clamp(1rem ,2.5vw ,1.5rem);
+            @include bold;
+        }
+
+        .form_for_news input,
+        .form_for_news button {
+            height: 40px;
+            border-radius: 5px;
+        }
+        
+        .form_for_news input {
+            width: 200px;
+            color: #000;
+        }
+        
+        .form_for_news button {
+            width: 100px;
+            background: rgb(14, 12, 12);
+            border: none;
+            outline: none;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        
+    }
+}
+
+
+    
+    
+    
+    
+
