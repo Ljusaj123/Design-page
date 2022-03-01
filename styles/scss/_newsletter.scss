@@ -1,39 +1,57 @@
 .newsletter {
-	width: 100%;
-	height: 20vh;
-	padding: 0 2rem;
-	@include flex-center;
-	background: $secondary-background-color;
+  width: 100%;
+  height: 30vh;
+  @include universal-flex-display(center, center);
+  background: $secondary-background-color;
 
-	&__container {
-		height: 100%;
-		width: 100%;
-		@include flex-space-evenly;
+  &__container {
+    height: 100%;
+    width: 100%;
+    @include universal-flex-display(space-evenly, center);
+    flex-direction: column;
 
-		& h1 {
-			font-size: clamp(1rem, 2.5vw, 1.5rem);
-			@include bold;
-		}
+    & h1 {
+      font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+      @include bold;
+    }
 
-		& .form_for_news input,
-		& .form_for_news button {
-			height: 40px;
-			border-radius: 5px;
-		}
+    & .form_for_news {
+      width: 100%;
+      @include universal-flex-display(center, center);
 
-		& .form_for_news input {
-			width: 200px;
-			color: #000;
-		}
+      & input {
+        width: clamp(200px, 50%, 300px);
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $text-color;
+        color: $text-color;
+        margin-right: 2rem;
+        line-height: 40px;
+      }
 
-		& .form_for_news button {
-			width: 100px;
-			background: rgb(14, 12, 12);
-			border: none;
-			outline: none;
-			color: #fff;
-			font-weight: 600;
-			cursor: pointer;
-		}
-	}
+      & button {
+        width: 100px;
+        height: 40px;
+        background: rgb(14, 12, 12);
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: $text-color;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media-500 {
+  .newsletter .newsletter__container .form_for_news {
+    flex-direction: column;
+
+    & input {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
 }
