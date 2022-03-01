@@ -1,18 +1,17 @@
 .footer {
-    width: 100vw;
-    height: 10vh;
-    margin: 0 auto;
+  width: 100vw;
+  height: 15vh;
+  background-color: $secondary-background-color;
 
-    &__container{
-        height: 100%;
-        width: 100%;
-        @include flex-center;
+  &__container {
+    height: 100%;
+    width: 100%;
+    @include universal-flex-display(center, center);
 
-        & p{
-            font-size: clamp(0.9rem, 2.5vw,1.2rem);
-            width: 70%;
-            text-align: center;
-
-        }
+    & p {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      width: 100%;
+      text-align: center;
     }
+  }
 }
