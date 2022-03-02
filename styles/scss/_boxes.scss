@@ -1,37 +1,53 @@
 .boxes {
+  width: 100%;
+  height: 100vh;
+
+  &__container {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    padding: 0 2rem;
+    @include universal-flex-display(space-evenly, center);
+    padding: 1rem;
 
-    &__container{
-        height: 100%;
-        width: 100%;
-        @include flex-space-evenly;
+    & .box {
+      height: 100%;
+      @include universal-flex-display(space-evenly, center);
+      flex-direction: column;
+      margin-right: 1rem;
 
-        & .box {
-            height: 80%;
-            width: 30%;
-            @include flex-space-evenly;
-            flex-direction: column;
-
-            & img{
-                height: clamp(200px, 25vw, 400px);
-                width: clamp(200px, 25vw, 400px);
-                border-radius: 5px;
-
-            }
-            & h3 {
-                font-size: clamp(1rem, 2.5vw,1.5rem);
-                @include bold;
-                padding: 10px 0;
-                font-weight: bold;
-                text-align: center;
-            }
-            & p {
-                font-size: clamp(0.8rem, 1.5vw, 1rem);
-            }
-
-        }
-
+      & img {
+        height: clamp(130px, 25vw, 400px);
+        width: clamp(130px, 25vw, 400px);
+        border-radius: 5px;
+      }
+      & h3 {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        @include bold;
+        text-align: center;
+      }
+      & p {
+        font-size: clamp(0.75rem, 1.5vw, 1rem);
+        text-align: center;
+      }
     }
+  }
+}
+
+@include media-750 {
+  .boxes {
+    height: fit-content;
+    &__container {
+      flex-direction: column;
+
+      & .box {
+        width: 80%;
+        margin: 2rem auto;
+        padding: 0 1rem;
+
+        & img,
+        & h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
 }
